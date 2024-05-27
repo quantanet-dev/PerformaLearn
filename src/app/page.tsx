@@ -8,7 +8,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
   const [showAccountCreation, setShowAccountCreation] = useState(false);
   return (
-    <main className="flex flex-row w-full h-screen justify-center items-center">
+    <main className="flex flex-row w-full h-dvh justify-center items-center">
       <Login_SignUp_Modal
         isOpen={showModal}
         onClose={setShowModal}

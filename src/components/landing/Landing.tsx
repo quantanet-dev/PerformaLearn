@@ -12,7 +12,7 @@ export default function Landing({
   return (
     <div className="flex flex-col md:flex-row max-w-7xl w-3/4 h-3/4 rounded justify-center md:justify-between items-center ">
       <div className="flex flex-row w-full justify-center items-center ">
-        <span className="animate-bounce hover:animate-none motion-reduce:animate-none mb-12 md:mb-0">
+        <span className="animate-bounce hover:animate-none motion-reduce:animate-none md:w-full md:h-full mb-32 md:mb-0 md:pt-0 w-48 h-48 pt-6">
           <Image
             priority
             id="landing-image"
