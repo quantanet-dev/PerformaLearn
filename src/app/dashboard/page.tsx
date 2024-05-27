@@ -1,20 +1,32 @@
 import { CalendarUI } from "@/components/common/dashboard/Calendar";
+import { CardUI } from "@/components/common/dashboard/Card";
+import TableUI from "@/components/common/dashboard/DataTable/Table";
 
 export default function DashboardPage() {
   return (
-    <div className="flex flex-col w-full h-min">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-5 p-5 w-full h-full">
-        <div className="flex p-3 flex-row border shadow-sm rounded-xl w-full h-full">
+    <div className="grid grid-rows-1 gap-3 w-full p-3">
+      <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-3 sm:grid-cols-1 h-full grid-rows-2">
+        <div className="w-full h-full">
           <CalendarUI />
         </div>
-        <div className="flex p-3 flex-row border shadow-sm rounded-xl w-full h-full"></div>
-        <div className="flex p-3 flex-row border shadow-sm rounded-xl w-full h-full"></div>
-        <div className="flex p-3 flex-row border shadow-sm rounded-xl w-full h-full"></div>
-        <div className="flex p-3 flex-row border shadow-sm rounded-xl w-full h-full"></div>
-        <div className="flex p-3 flex-row border shadow-sm rounded-xl w-full h-full"></div>
+        <div className="w-full h-full xl:col-span-2">
+          <TableUI />
+        </div>
+        <div className="w-full h-full">
+          <CardUI />
+        </div>
+        <div className="w-full h-full">
+          <CardUI />
+        </div>
+        <div className="w-full h-full xl:col-span-2">
+          <TableUI />
+        </div>
+        <div className="w-full h-full">
+          <CardUI />
+        </div>
       </div>
-      <div className="grid grid-cols-1 pb-5 pl-5 pr-5 w-full h-64">
-        <div className="flex p-3 flex-row border shadow-sm rounded-xl w-full h-full"></div>
+      <div className="w-full h-min">
+        <CardUI />
       </div>
     </div>
   );
