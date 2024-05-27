@@ -1,5 +1,6 @@
 import Image from "next/image";
-import LandingImage from "../../../public/assets/learning-journey.png";
+// import LandingImage from "../../../public/assets/learning-journey.png";
+import Logo from "../../../public/assets/PerformaLearnLogoSVG.svg";
 
 export default function Landing({
   openModal,
@@ -17,7 +18,7 @@ export default function Landing({
             id="landing-image"
             width={256}
             height={256}
-            src={LandingImage}
+            src={Logo}
             alt="Learn by Performace"
           />
         </span>
