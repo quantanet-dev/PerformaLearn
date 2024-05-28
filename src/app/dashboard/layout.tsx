@@ -10,7 +10,6 @@ export default function DashboardLayout({
       <div className="fixed top-0 left-0 z-50 h-full">
         <SideBar />
       </div>
-
       <div className="flex flex-row w-full h-full top-0">{children}</div>
     </div>
   );

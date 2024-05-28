@@ -20,12 +20,12 @@ export default function SideBar() {
 
   if (!showMenu) {
     return (
-      <div className="sticky w-min md:max-w-32 h-full top-0 left-0 hover:animate-pulse">
+      <div className="sticky w-min md:max-w-32 h-full top-0 left-0">
         <button
-          className="mt-2 -ml-4 bg-slate-100 rounded-full border border-opacity-75 shadow-md bg-opacity-75 p-0.5"
+          className="mt-24 -ml-6 mr-6 bg-slate-100 rounded-full border border-opacity-75 shadow-md bg-opacity-75 px-0.5 py-8"
           onClick={() => setShowMenu(!showMenu)}
         >
-          <IoIosArrowForward className="ml-2 w-6 h-6" />
+          <IoIosArrowForward className="ml-6 w-6 h-6" />
         </button>
       </div>
     );

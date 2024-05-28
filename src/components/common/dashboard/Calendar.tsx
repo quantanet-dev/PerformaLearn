@@ -12,11 +12,11 @@ export function CalendarUI() {
       mode="single"
       selected={date}
       onSelect={setDate}
-      className="w-full h-full rounded-md border shadow-md"
+      className="flex flex-row w-auto h-full rounded-md border shadow-md"
       classNames={{
         months: "flex w-full h-full flex-col",
         month: "space-y-4 w-full h-full flex flex-col",
-        table: "w-full border-collapse space-y-1",
+        table: "w-full flex-1 border-collapse space-y-1",
         head_row: "",
         row: "w-full mt-2",
         day: "rounded-md w-full h-full",
