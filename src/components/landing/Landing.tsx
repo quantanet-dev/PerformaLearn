@@ -12,7 +12,7 @@ export default function Landing({
   return (
     <div className="flex flex-col md:flex-row max-w-7xl w-3/4 h-3/4 rounded justify-center md:justify-between items-center ">
       <div className="flex flex-row w-full justify-center items-center ">
-        <span className="animate-bounce hover:animate-none motion-reduce:animate-none md:w-full md:h-full mb-32 md:mb-0 md:pt-0 w-48 h-48 pt-6">
+        <span className="animate-bounce hover:animate-none motion-reduce:animate-none md:min-w-min md:min-h-min mb-32 md:mb-0 md:pt-0 w-48 h-48 pt-6">
           <Image
             priority
             id="landing-image"
@@ -32,16 +32,16 @@ export default function Landing({
         </div>
         <div className="flex w-full flex-col justify-center space-y-3 items-center">
           <button
-            onClick={() => openModal(true) & setShowAccountCreation(true)}
-            className="w-full max-w-xs bg-slate-100 text-slate-600 hover:text-slate-900 hover:drop-shadow font-semibold rounded-md p-2"
+            onClick={() => openModal(true) & setShowAccountCreation(false)}
+            className="w-full max-w-min px-8 text-nowrap bg-slate-100 text-gray-400 hover:text-black hover:drop-shadow font-semibold rounded-md p-2"
           >
-            Get Started
+            Log In
           </button>
           <button
-            onClick={() => openModal(true) & setShowAccountCreation(false)}
-            className="w-full max-w-xs bg-slate-100 text-slate-600 hover:text-slate-900 hover:drop-shadow font-semibold rounded-md p-2"
+            onClick={() => openModal(true) & setShowAccountCreation(true)}
+            className="w-full max-w-min px-6 bg-slate-100 text-gray-400 hover:text-black hover:drop-shadow font-semibold rounded-md p-2"
           >
-            Access Account
+            Register
           </button>
         </div>
       </div>

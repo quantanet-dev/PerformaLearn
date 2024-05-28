@@ -1,6 +1,5 @@
 import { BadgesCard } from "@/components/common/dashboard/BadgesCard";
 import { CalendarUI } from "@/components/common/dashboard/Calendar";
-import { CardUI } from "@/components/common/dashboard/Card";
 import TableUI from "@/components/common/dashboard/DataTable/Table";
 import { NotificationCard } from "@/components/common/dashboard/NotificationCard";
 import { ProgressCard } from "@/components/common/dashboard/ProgressCard";
