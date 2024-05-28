@@ -21,7 +21,7 @@ import {
 
 export function CardUI() {
   return (
-    <Card className="h-full">
+    <Card className="h-full shadow-md">
       <CardHeader>
         <CardTitle>Create project</CardTitle>
         <CardDescription>Deploy your new project in one-click.</CardDescription>
